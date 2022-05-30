@@ -195,3 +195,17 @@ section p{
     justify-content: space-between;
 }
 
+/* ---------------------- FOOTER ----------------------*/
+
+#footer{
+    background-color: var(--dark_brown);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height:3rem;
+    color:var(--super_light_brown);
+}
+#footer i{
+    font-size: 2rem;
+}
+
