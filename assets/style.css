@@ -1,0 +1,59 @@
+html {
+   margin: -0.5rem;
+}
+
+.pains {
+    background-color: #35140f;
+    height: 16rem;
+    margin-bottom: -1rem;
+}
+
+.viennoiseries {
+    background-color: #5c210a;
+    height: 16rem;
+    margin-bottom: -1rem;
+}
+
+.sandwichs {
+    background-color: #875731;
+    height: 16rem;
+    margin-bottom: -1rem;
+}
+
+.boissons {
+    background-color: #a87638;
+    height: 16rem;
+    margin-bottom: -1rem;
+}
+
+.tartes {
+    background-color: #c59644;
+    height: 16rem;
+    margin-bottom: -1rem;
+}
+
+.tab {
+    height: 10.8rem;;
+    width: 19.2rem;
+}
+
+.caseUp {
+   height: 3rem;
+   display: flex;
+   align-items: center;
+   padding-left: 2.1rem;;
+}
+
+.caseDown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.caseTitre {
+    display: contents;
+    color: white;
+    font-family: 'Bodoni Moda', sans-serif;
+    font-weight: 100;
+}
