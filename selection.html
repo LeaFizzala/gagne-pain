@@ -5,11 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="assets/main.js" defer></script>
     <title>Document</title>
   </head>
   <body>
-    <header></header>
+    <!--------------------------  NAV BAR  ------------------------------>
+    <nav id="nav">
+      <a href="/about.html" id="logo">
+          </a>
+          <a href="#"><i class="fa-solid fa-bread-slice"></i></a>
+          <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+
+          <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+        
+            <ul class="menu__box">
+              <li>
+                    <li><a class="menu__item" href="#produits">A propos</a></li>
+                    <li><a class="menu__item" href="#passion">Notre équipe</a></li>
+                    <li><a class="menu__item" href="#engagements">Nos engagements</a></li>
+                    <li><a class="menu__item" href="#contact">Nous contacter</a></li>
+            </ul>
+          </div>
+      </nav>
+
+      <!------------------------ MENU HAMBURGER ------------------------>
+    
+     
+   
+
+    <!------------------------------- MAIN SECTION -------------------------->
     <main class="mainSelection">
       <div class="pains">
         <div class="caseGlobal">
@@ -67,6 +96,11 @@
       </div>
 
     </main>
-    <footer></footer>
+    <footer>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+        <a href="#">Login</a>
+    </footer>
   </body>
 </html>
