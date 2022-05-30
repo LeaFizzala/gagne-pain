@@ -1,0 +1,124 @@
+:root{
+    --brown : #875731;
+    --light_brown : #A87638;
+    --super_light_brown : #C59644;
+    --chocolate : #5C210A;
+    --dark_brown : #190918;
+
+}
+body{
+    border : 1px solid red;
+    box-sizing: border-box;
+    width:100%;
+    margin:0;
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+}
+/* ------------ HEADER AND NAV BAR ------------------ */
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:30rem;
+    background-image: url("/assets/img/bakery.jpg");
+    background-size: cover;
+    color: #FFFF;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding:1.5rem;
+
+}
+#logo{
+    height:4rem;
+    width:4rem;
+    background-image: url("/assets/img/gagne_pain_logo_transparent.png");
+    background-size: cover;
+}
+#menu_burger{
+    height:3rem;
+    width:3rem;
+    margin-top:1rem;
+    background-color: var(--super_light_brown);
+    border-radius:55%;
+}
+h1{
+    font-family:'Bodoni Moda', 'Oswald', serif;
+    padding : 2rem 0.5rem;
+}
+/* -------------- SECTION 1 ------------------------- */
+.brown_about{
+    background: var(--brown);
+    margin:0;
+    color: #FFFF ;
+    text-align: center;
+    padding : 1rem;
+    
+}
+section p{
+    margin:2.5rem;
+}
+
+#icon1{
+    height: 7rem;
+    width:7rem;
+    margin: auto;
+    background-image: url("/assets/img/icon1.png");
+    background-size: contain;
+}
+
+/* ------------------- SECTION 2 ------------------------- */
+
+#icon2{
+    height: 7rem;
+    width:7rem;
+    margin: auto;
+    background-image: url("/assets/img/icon3.png");
+    background-size: contain;
+}
+/* ------------------- SECTION 3 ------------------------- */
+
+#icon3{
+    height: 7rem;
+    width:7rem;
+    margin: auto;
+    background-image: url("/assets/img/icon2.png");
+    background-size: contain;
+}
+
+/* ----------------------- CONTACT ----------------------------- */
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height:25rem;
+    background-color: var(--super_light_brown) ;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    margin-top: -2rem;
+}
+.light_rect{
+    background-color: #f7eabc;
+    margin : 0rem 2rem;
+    text-align: center;
+    font-family: 'Bodoni Modona', serif;
+    font-weight: 400;
+}
+#contact_info{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact{
+    padding:0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
