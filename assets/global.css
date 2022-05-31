@@ -233,7 +233,6 @@ section p {
 .sign-main {
   margin: 1rem 0rem;
   background-color: var(--light_brown);
-  viewport-fit: ;
 }
 
 legend {
