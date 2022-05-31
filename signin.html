@@ -48,36 +48,38 @@
     </header> -->
 
     <main class="sign-main">
-      <div>
-        <form id="signin_info" action="post" method="get">
+      <form id="signin_info" action="post" method="get">
+        <div class="sign-title">
+          <div class="upper-circle"></div>
           <h1 class="sign-h1">Ravi de vous revoir !</h1>
-          <fieldset class="signform-container">
-            <legend>S'identifier</legend>
-            <p>
-              <label for="mail">
-                <span>adresse mail</span>
-              </label>
-              <input type="email" id="mail" name="usermail" />
-            </p>
-            <p>
-              <label for="pwd">
-                <span>mot de passe</span>
-              </label>
-              <input type="password" id="pwd" name="password" />
-            </p>
-          </fieldset>
-          <fieldset class="sign-confirm">
-            <p>
-              <button type="button">connexion</button>
-            </p>
-            <a id="forgot-password" href="url">j'ai oublié mon mot de passe</a>
-          </fieldset>
-        </form>
-
-        <div class="sign-bottom">
-          <p>Pas encore chez nous ?</p>
-          <p><button type="button">créer son compte</button></p>
         </div>
+        <fieldset class="signform-container">
+          <legend>S'identifier</legend>
+          <p>
+            <label for="mail">
+              <span>adresse mail</span>
+            </label>
+            <input type="email" id="mail" name="usermail" />
+          </p>
+          <p>
+            <label for="pwd">
+              <span>mot de passe</span>
+            </label>
+            <input type="password" id="pwd" name="password" />
+          </p>
+        </fieldset>
+        <fieldset class="sign-confirm">
+          <p>
+            <button type="button">connexion</button>
+          </p>
+          <a id="forgot-password" href="url">j'ai oublié mon mot de passe</a>
+        </fieldset>
+      </form>
+
+      <div class="sign-bottom">
+        <p>Pas encore chez nous ?</p>
+        <p><button type="button">créer son compte</button></p>
+        <div class="lower-circle"></div>
       </div>
     </main>
   </body>
