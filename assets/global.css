@@ -1,13 +1,17 @@
 :root {
+  --dark_brown: #190918;
+  --chocolate: #5c210a;
   --brown: #875731;
   --light_brown: #a87638;
   --super_light_brown: #c59644;
-  --chocolate: #5c210a;
-  --dark_brown: #190918;
+  --beige: #f7eabc;
+  --light_text: #fcfcf4;
+  --medium_text: #e9e4de;
+  --dark_text: #b7a89c;
 }
-/* *{
-     border : 1px solid red; 
-} */
+* {
+  border: 1px solid red;
+}
 body {
   box-sizing: border-box;
   width: 100%;
@@ -138,7 +142,7 @@ h1 {
 .brown_about {
   background: var(--brown);
   margin: 0;
-  color: #ffff;
+  color: var(--text_light);
   text-align: center;
   padding: 1rem;
 }
@@ -186,7 +190,7 @@ section p {
   margin-top: -2rem;
 }
 .light_rect {
-  background-color: #f7eabc;
+  background-color: var(--beige);
   margin: 0rem 2rem;
   text-align: center;
   font-family: "Bodoni Modona", serif;
@@ -220,4 +224,49 @@ section p {
   text-decoration: none;
   color: var(--super_light_brown);
   font-family: "Raleway", serif;
+}
+
+/* ---------------------- SIGNIN AND SIGNUP ----------------------*/
+/* .sign-body {
+} */
+
+.sign-main {
+  margin: 1rem 0rem;
+  background-color: var(--light_brown);
+  viewport-fit: ;
+}
+
+legend {
+  font-family: "Bodoni Moda", "Oswald", serif;
+  color: var(--medium_text);
+}
+
+.sign-h1 {
+  font-family: "Bodoni Moda", "Oswald", serif;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: var(--medium_text);
+}
+
+.signform-container {
+  padding: 2rem;
+}
+
+.sign-confirm {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: baseline;
+  justify-content: center;
+}
+
+#forgot-password {
+  font-size: 0.6rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.sign-bottom {
+  /* padding-top: 1rem; */
+  display: flex;
+  justify-content: flex-end;
 }

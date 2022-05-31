@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/global.css" />
-    <link rel="stylesheet" href="assets/signin.css" />
+    <!-- <link rel="stylesheet" href="assets/signin.css" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,7 +22,7 @@
     />
     <title>S'identifier</title>
   </head>
-  <body>
+  <body class="sign-body">
     <nav id="nav">
       <a href="/about.html" id="logo"> </a>
       <a href="#"><i class="fa-solid fa-bread-slice"></i></a>
@@ -47,11 +47,12 @@
       <h1 id="main_title">A propos de nous</h1>
     </header> -->
 
-    <main>
-      <div class="signin-div">
+    <main class="sign-main">
+      <div>
         <form id="signin_info" action="post" method="get">
-          <h1>Ravi de vous revoir !</h1>
-          <fieldset>
+          <h1 class="sign-h1">Ravi de vous revoir !</h1>
+          <fieldset class="signform-container">
+            <legend>S'identifier</legend>
             <p>
               <label for="mail">
                 <span>adresse mail</span>
@@ -64,20 +65,19 @@
               </label>
               <input type="password" id="pwd" name="password" />
             </p>
-
+          </fieldset>
+          <fieldset class="sign-confirm">
             <p>
               <button type="button">connexion</button>
             </p>
-            <p>j'ai oublié mon mot de passe</p>
+            <a id="forgot-password" href="url">j'ai oublié mon mot de passe</a>
           </fieldset>
-
-          <section>
-            <p>Pas encore chez nous ?</p>
-            <p>
-              <button type="button">créer son compte</button>
-            </p>
-          </section>
         </form>
+
+        <div class="sign-bottom">
+          <p>Pas encore chez nous ?</p>
+          <p><button type="button">créer son compte</button></p>
+        </div>
       </div>
     </main>
   </body>
