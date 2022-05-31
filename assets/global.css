@@ -10,7 +10,7 @@
   --dark_text: #b7a89c;
 }
 * {
-  border: 1px solid red;
+  border: 1px solid magenta;
 }
 body {
   box-sizing: border-box;
@@ -196,12 +196,15 @@ section p {
   font-family: "Bodoni Modona", serif;
   font-weight: 400;
 }
-#contact_info {
+#contact_info_form {
   display: flex;
   flex-direction: column;
 }
-
-.contact {
+.sign_info_form {
+  display: flex;
+  flex-direction: column;
+}
+.form_element {
   padding: 0.5rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -286,7 +289,7 @@ legend {
   border-radius: 50%;
   height: 21rem;
   width: 21rem;
-  z-index: 2;
+  z-index: -2;
   margin: -7rem;
   /* justify-self:right; */
 }
