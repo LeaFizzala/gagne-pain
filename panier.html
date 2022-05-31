@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="/assets/script.js" defer></script>
+    <title>Panier</title>
+</head>
+<body class="bodyPanier">
+    <main class="mainPanier" > 
+        <div class="card">
+            <div class="supCard">
+                <img class="imgConsommation" src="/assets/img/croissant.jpg">
+                <div class="titleCard">
+                    <h2 class="titleConsommation">Croissant à la framboise</h2>
+                </div>
+            </div>
+            <div class="infCard">
+                <div class="quantityCard">
+                    <div class="titlequantityCard">
+                        <h3 class="qtyTitle">Quantité :</h3>
+                    </div>
+                    <div class="qty">
+                        <div class="plusMinus">
+                            <input type="button" value="-" class="minus"><input min="1" max="20" value="1" class="quantityInput" class="qty"><input type="button" value="+" class="plus">
+                        </div>
+                    </div>
+                </div>
+                <div class="deleteCard">
+                    <h6><u>supprimer</u></h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="sectionPaiement">
+            <div class="price">
+                <div class="sousTotal">
+                    <div class="infoPrice">
+                        <div class="titlePrice">
+                            <h3>Sous-Total</h3>
+                        </div>
+                        <div class="euroPrice">
+                            <h3>20.00€</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="remise">
+                    <div class="infoPrice">
+                        <div class="titlePrice">
+                            <h3>Remise</h3>
+                        </div>
+                        <div class="euroPrice">
+                            <h3>0.00€</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="total">
+                    <div class="infoPrice">
+                        <div class="titlePrice">
+                            <h3>Total</h3>
+                        </div>
+                        <div class="euroPrice">
+                            <h3>20.00€</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="paiement">
+                <button type="button" class="btnPaiement"><h2 class="btnTitle">PAIEMENT</h2></button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
