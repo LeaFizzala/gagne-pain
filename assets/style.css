@@ -26,8 +26,8 @@ nav{
     background-color: var(--dark_brown);
     mix-blend-mode: hard-light;
     align-items: center;
-
 }
+
 nav a{
     text-decoration: none;
     padding: 0.5rem;
@@ -120,12 +120,6 @@ nav a{
   }
 
   /************************  MAIN SECTION  **************************/
-
-
-
-.mainSelection {
-  
-}
 
 .pains {
     background-color: #35140f;
@@ -266,6 +260,7 @@ nav a{
 
 .mainPanier {
     background-color: #c59644;
+    min-height: 100vh;
 }
 
 .sousTotal, .remise, .total {
@@ -317,18 +312,10 @@ nav a{
     font-weight: 500;
 }
 
-.sectionPaiement {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
 
-.bodyPanier {
-    background-color: #c99e56;
-}
 /* ---------------------- FOOTER ----------------------*/
 
-footer{
+#footer{
     background-color: var(--dark_brown);
     display: flex;
     justify-content: space-evenly;
@@ -336,10 +323,11 @@ footer{
     height:3rem;
     color:var(--super_light_brown);
 }
-footer i{
+
+#footer i{
     font-size: 2rem;
 }
-footer a{
+#footer a{
     text-decoration: none;
     color: var(--super_light_brown);
     font-family: 'Raleway', serif;
