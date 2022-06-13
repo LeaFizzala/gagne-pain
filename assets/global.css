@@ -10,7 +10,7 @@
   --dark_text: #b7a89c;
 }
 * {
-  border: 1px solid red;
+border: 1px solid red;
 }
 body {
   box-sizing: border-box;
@@ -231,8 +231,8 @@ section p {
 } */
 
 .sign-main {
-  margin: 1rem 0rem;
-  background-color: var(--light_brown);
+margin: 1rem 0rem;
+background-color: var(--light_brown);
 }
 
 legend {
@@ -243,6 +243,8 @@ legend {
 .sign-h1 {
   font-family: "Bodoni Moda", "Oswald", serif;
   font-size: 2rem;
+  margin: 0.5rem;
+  text-align: center;
   font-weight: bolder;
   color: var(--medium_text);
 }
@@ -268,4 +270,14 @@ legend {
   /* padding-top: 1rem; */
   display: flex;
   justify-content: flex-end;
+}
+
+.lower-circle {
+  background-color: var(--chocolate);
+  border-radius: 50%;
+  height: 21rem;
+  width: 21rem;
+  z-index: -2;
+  margin: -7rem;
+  /* justify-self:right; */
 }
