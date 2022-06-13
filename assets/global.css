@@ -1,234 +1,295 @@
-:root{
-    --brown : #875731;
-    --light_brown : #A87638;
-    --super_light_brown : #C59644;
-    --chocolate : #5C210A;
-    --dark_brown : #190918;
-
+:root {
+  --dark_brown: #190918;
+  --chocolate: #5c210a;
+  --brown: #875731;
+  --light_brown: #a87638;
+  --super_light_brown: #c59644;
+  --beige: #f7eabc;
+  --light_text: #fcfcf4;
+  --medium_text: #e9e4de;
+  --dark_text: #b7a89c;
 }
-*{
-    /* border : 1px solid red; */
+* {
+  border: 1px solid magenta;
 }
-body{
-    
-    box-sizing: border-box;
-    width:100%;
-    margin:0;
-
+body {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
 }
-main{
-    display: flex;
-    flex-direction: column;
-    font-family: 'Raleway', sans-serif;
+main {
+  display: flex;
+  flex-direction: column;
+  font-family: "Raleway", sans-serif;
 }
 /* ------------ HEADER AND NAV BAR ------------------ */
-header{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height:30rem;
-    background-image: url("img/bakery.jpg");
-    background-size: cover;
-    color: #FFFF;
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30rem;
+  background-image: url("img/bakery.jpg");
+  background-size: cover;
+  color: #ffff;
 }
-nav{
-    position: sticky;
-    top:0;
-    display: flex;
-    justify-content: space-between;
-    padding:1.5rem 9rem 1.5rem 1rem;
-    background-color: var(--dark_brown);
-    mix-blend-mode: hard-light;
-    align-items: center;
-
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 9rem 1.5rem 1rem;
+  background-color: var(--dark_brown);
+  mix-blend-mode: hard-light;
+  align-items: center;
 }
-nav a{
-    text-decoration: none;
-    color: #FFFF;
-    font-size: 2rem;
-    font-family: 'Bodoni Moda', serif;
+nav a {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 2rem;
+  font-family: "Bodoni Moda", serif;
 }
-#logo{
-    height:4rem;
-    width:4rem;
-    background-image: url("img/gagne_pain_logo_transparent.png");
-    background-size: cover;
+#logo {
+  height: 4rem;
+  width: 4rem;
+  background-image: url("img/gagne_pain_logo_transparent.png");
+  background-size: cover;
 }
-#menu_burger{
-    height:3rem;
-    width:3rem;
-    margin-top:1rem;
-    background-color: var(--super_light_brown);
-    border-radius:55%;
+#menu_burger {
+  height: 3rem;
+  width: 3rem;
+  margin-top: 1rem;
+  background-color: var(--super_light_brown);
+  border-radius: 55%;
 }
-h1{
-    font-family:'Bodoni Moda', 'Oswald', serif;
-    padding : 2rem 0.5rem;
+h1 {
+  font-family: "Bodoni Moda", "Oswald", serif;
+  padding: 2rem 0.5rem;
 }
 /* ------------------------- MENU BURGER -----------------*/
 #menu__toggle {
-    opacity: 0;
-  }
-  #menu__toggle:checked + .menu__btn > span {
-    transform: rotate(45deg);
-    
-  }
-  #menu__toggle:checked + .menu__btn > span::before {
-    top: 0;
-    transform: rotate(0deg);
-
-  }
-  #menu__toggle:checked + .menu__btn > span::after {
-    top: 0; 
-    transform: rotate(90deg);
-  
-  }
-  #menu__toggle:checked ~ .menu__box {
-    right: 0 !important;
-  }
-  .menu__btn {
-    position: fixed;
-    top: 3rem;
-    right: 1.5rem;
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
-    z-index: 1;
-  }
-  .menu__btn > span,
-  .menu__btn > span::before,
-  .menu__btn > span::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #D9D9D9;
-    transition-duration: .25s;
-  }
-  .menu__btn > span::before {
-    content: '';
-    top: -8px;
-  }
-  .menu__btn > span::after {
-    content: '';
-    top: 8px;
-  }
-  .menu__box {
-    display: block;
-    position: fixed;
-    top: 7rem;
-    right: -100%;
-    width: 10rem;
-    height: fit-content;
-    margin: 0;
-    padding: 5rem 0;
-    list-style: none;
-    background-color: #D9D9D9;
-    mix-blend-mode: hard-light;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-    transition-duration: .25s;
-  }
-  .menu__item {
-    display: block;
-    padding: 12px 24px;
-    color: var(--dark_brown);
-    font-family: 'Bodoni Modona', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-    transition-duration: .25s;
-  }
-  .menu__item:hover {
-    background-color: #CFD8DC;
-  }
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  right: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  top: 3rem;
+  right: 1.5rem;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #d9d9d9;
+  transition-duration: 0.25s;
+}
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 7rem;
+  right: -100%;
+  width: 10rem;
+  height: fit-content;
+  margin: 0;
+  padding: 5rem 0;
+  list-style: none;
+  background-color: #d9d9d9;
+  mix-blend-mode: hard-light;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.25s;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: var(--dark_brown);
+  font-family: "Bodoni Modona", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+.menu__item:hover {
+  background-color: #cfd8dc;
+}
 /* --------------  SECTION 1  ------------------------- */
-.brown_about{
-    background: var(--brown);
-    margin:0;
-    color: #FFFF ;
-    text-align: center;
-    padding : 1rem;
-    
+.brown_about {
+  background: var(--brown);
+  margin: 0;
+  color: var(--text_light);
+  text-align: center;
+  padding: 1rem;
 }
-section p{
-    margin:2.5rem;
+section p {
+  margin: 2.5rem;
 }
 
-#icon1{
-    height: 7rem;
-    width:7rem;
-    margin: auto;
-    background-image: url("img/icon1.png");
-    background-size: contain;
+#icon1 {
+  height: 7rem;
+  width: 7rem;
+  margin: auto;
+  background-image: url("img/icon1.png");
+  background-size: contain;
 }
 
 /* ------------------- SECTION 2 ------------------------- */
 
-#icon2{
-    height: 7rem;
-    width:7rem;
-    margin: auto;
-    background-image: url("img/icon3.png");
-    background-size: contain;
+#icon2 {
+  height: 7rem;
+  width: 7rem;
+  margin: auto;
+  background-image: url("img/icon3.png");
+  background-size: contain;
 }
 /* ------------------- SECTION 3 ------------------------- */
 
-#icon3{
-    height: 7rem;
-    width:7rem;
-    margin: auto;
-    background-image: url("img/icon2.png");
-    background-size: contain;
+#icon3 {
+  height: 7rem;
+  width: 7rem;
+  margin: auto;
+  background-image: url("img/icon2.png");
+  background-size: contain;
 }
 
 /* ----------------------- CONTACT ----------------------------- */
 
-#contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height:25rem;
-    background-color: var(--super_light_brown) ;
-    border-top-left-radius: 35px;
-    border-top-right-radius: 35px;
-    margin-top: -2rem;
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 25rem;
+  background-color: var(--super_light_brown);
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  margin-top: -2rem;
 }
-.light_rect{
-    background-color: #f7eabc;
-    margin : 0rem 2rem;
-    text-align: center;
-    font-family: 'Bodoni Modona', serif;
-    font-weight: 400;
+.light_rect {
+  background-color: var(--beige);
+  margin: 0rem 2rem;
+  text-align: center;
+  font-family: "Bodoni Modona", serif;
+  font-weight: 400;
 }
-#contact_info{
-    display: flex;
-    flex-direction: column;
-
+#contact_info_form {
+  display: flex;
+  flex-direction: column;
 }
-
-.contact{
-    padding:0.5rem 2rem;
-    display: flex;
-    justify-content: space-between;
+.sign_info_form {
+  display: flex;
+  flex-direction: column;
+}
+.form_element {
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* ---------------------- FOOTER ----------------------*/
 
-#footer{
-    background-color: var(--dark_brown);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height:3rem;
-    color:var(--super_light_brown);
+#footer {
+  background-color: var(--dark_brown);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 3rem;
+  color: var(--super_light_brown);
 }
-#footer i{
-    font-size: 2rem;
+#footer i {
+  font-size: 2rem;
 }
-#footer a{
-    text-decoration: none;
-    color: var(--super_light_brown);
-    font-family: 'Raleway', serif;
+#footer a {
+  text-decoration: none;
+  color: var(--super_light_brown);
+  font-family: "Raleway", serif;
 }
 
+/* ---------------------- SIGNIN AND SIGNUP ----------------------*/
+.sign-body {
+  background-color: var(--light_brown);
+}
+/* 
+.sign-main {
+  padding: 1rem 0rem;
+}
+*/
+.upper-circle {
+  background-color: var(--brown);
+  border-radius: 50%;
+  height: 15rem;
+  width: 15rem;
+  z-index: 2;
+  margin: -5rem;
+}
 
+legend {
+  font-family: "Bodoni Moda", "Oswald", serif;
+  color: var(--medium_text);
+}
+
+.sign-h1 {
+  font-family: "Bodoni Moda", "Oswald", serif;
+  font-size: 2rem;
+  margin: 0.5rem;
+  text-align: center;
+  font-weight: bolder;
+  color: var(--medium_text);
+}
+
+.signform-container {
+  padding: 2rem;
+}
+
+.sign-confirm {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: baseline;
+  justify-content: center;
+}
+
+#forgot-password {
+  font-size: 0.6rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.sign-bottom {
+  /* padding-top: 1rem; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lower-circle {
+  background-color: var(--chocolate);
+  border-radius: 50%;
+  height: 21rem;
+  width: 21rem;
+  z-index: -2;
+  margin: -7rem;
+  /* justify-self:right; */
+}
