@@ -9,9 +9,11 @@
   --medium_text: #e9e4de;
   --dark_text: #b7a89c;
 }
+
 /* * {
   border: 1px solid magenta;
 } */
+
 body {
   box-sizing: border-box;
   width: 100%;
@@ -235,7 +237,9 @@ section p {
 }
 
 .sign-main {
-  height: 100vh;
+margin: 1rem 0rem;
+background-color: var(--light_brown);
+height: 100vh;
 }
 
 .upper-circle {
