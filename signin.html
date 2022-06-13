@@ -48,35 +48,41 @@
     </header> -->
 
     <main class="sign-main">
-      <div>
-        <form id="signin_info" action="post" method="get">
+      <form class="sign_info_form" action="post" method="get">
+        <div class="sign-title">
+          <div class="circle-div">
+            <div class="upper-circle"></div>
+          </div>
           <h1 class="sign-h1">Ravi de vous revoir !</h1>
-          <fieldset class="signform-container">
-            <legend>S'identifier</legend>
-            <p>
-              <label for="mail">
-                <span>adresse mail</span>
-              </label>
-              <input type="email" id="mail" name="usermail" />
-            </p>
-            <p>
-              <label for="pwd">
-                <span>mot de passe</span>
-              </label>
-              <input type="password" id="pwd" name="password" />
-            </p>
-          </fieldset>
-          <fieldset class="sign-confirm">
-            <p>
-              <button type="button">connexion</button>
-            </p>
-            <a id="forgot-password" href="url">j'ai oublié mon mot de passe</a>
-          </fieldset>
-        </form>
+        </div>
+        <fieldset class="signform-container">
+          <legend>S'identifier</legend>
+          <div class="form_element">
+            <label for="mail">
+              <span>adresse mail</span>
+            </label>
+            <input type="email" id="mail" name="usermail" />
+          </div>
+          <div class="form_element">
+            <label for="pwd">
+              <span>mot de passe</span>
+            </label>
+            <input type="password" id="pwd" name="password" />
+          </div>
+        </fieldset>
+        <fieldset class="sign-confirm">
+          <div class="form_element">
+            <button type="button">connexion</button>
+          </div>
+          <a id="forgot-password" href="url">j'ai oublié mon mot de passe</a>
+        </fieldset>
+      </form>
 
-        <div class="sign-bottom">
-          <p>Pas encore chez nous ?</p>
-          <p><button type="button">créer son compte</button></p>
+      <div class="sign-bottom">
+        <p>Pas encore client chez nous ?</p>
+        <p><button type="button">créer son compte</button></p>
+        <div class="circle-div">
+          <div class="lower-circle"></div>
         </div>
       </div>
     </main>

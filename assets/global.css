@@ -9,9 +9,11 @@
   --medium_text: #e9e4de;
   --dark_text: #b7a89c;
 }
-* {
-border: 1px solid red;
-}
+
+/* * {
+  border: 1px solid magenta;
+} */
+
 body {
   box-sizing: border-box;
   width: 100%;
@@ -196,12 +198,15 @@ section p {
   font-family: "Bodoni Modona", serif;
   font-weight: 400;
 }
-#contact_info {
+#contact_info_form {
   display: flex;
   flex-direction: column;
 }
-
-.contact {
+.sign_info_form {
+  display: flex;
+  flex-direction: column;
+}
+.form_element {
   padding: 0.5rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -227,12 +232,24 @@ section p {
 }
 
 /* ---------------------- SIGNIN AND SIGNUP ----------------------*/
-/* .sign-body {
-} */
+.sign-body {
+  background-color: var(--light_brown);
+}
 
 .sign-main {
 margin: 1rem 0rem;
 background-color: var(--light_brown);
+height: 100vh;
+}
+
+.upper-circle {
+  background-color: var(--brown);
+  border-radius: 50%;
+  height: 15rem;
+  width: 15rem;
+  z-index: 2;
+  margin: -5rem;
+  overflow: hidden;
 }
 
 legend {
@@ -243,7 +260,7 @@ legend {
 .sign-h1 {
   font-family: "Bodoni Moda", "Oswald", serif;
   font-size: 2rem;
-  margin: 0.5rem;
+  margin-top: -19rem;
   text-align: center;
   font-weight: bolder;
   color: var(--medium_text);
@@ -279,5 +296,11 @@ legend {
   width: 21rem;
   z-index: -2;
   margin: -7rem;
-  /* justify-self:right; */
+}
+
+.circle-div {
+  width: 21rem;
+  height: 21rem;
+  z-index: -3;
+  overflow: hidden;
 }
