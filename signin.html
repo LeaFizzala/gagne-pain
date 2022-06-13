@@ -48,13 +48,10 @@
     </header> -->
 
     <main class="sign-main">
+        <div class="circle-div">
+          <div class="upper-circle"></div>
+      </div>
       <form class="sign_info_form" action="post" method="get">
-        <div class="sign-title">
-          <div class="circle-div">
-            <div class="upper-circle"></div>
-          </div>
-          <h1 class="sign-h1">Ravi de vous revoir !</h1>
-        </div>
         <fieldset class="signform-container">
           <legend>S'identifier</legend>
           <div class="form_element">
@@ -71,20 +68,34 @@
           </div>
         </fieldset>
         <fieldset class="sign-confirm">
+          <legend>Se connecter</legend>
           <div class="form_element">
             <button type="button">connexion</button>
           </div>
           <a id="forgot-password" href="url">j'ai oublié mon mot de passe</a>
         </fieldset>
+        
+        <fieldset class="sign-bottom">
+          <legend>S'inscrire</legend>
+          <p>Pas encore client chez nous ?</p>
+          <p><button type="button">créer son compte</button></p>
+          
+          <div class="circle-div">
+          </div>
+        </fieldset>
       </form>
-
-      <div class="sign-bottom">
-        <p>Pas encore client chez nous ?</p>
-        <p><button type="button">créer son compte</button></p>
-        <div class="circle-div">
-          <div class="lower-circle"></div>
-        </div>
+      <div class="insideCircle">
+        <div class="lower-circle"></div>
       </div>
+
+      
+
     </main>
+    <footer id="footer">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+      <a href="#">Login</a>
+    </footer>
   </body>
 </html>
