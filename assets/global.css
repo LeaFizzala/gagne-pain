@@ -225,9 +225,13 @@ section p {
   height: 3rem;
   color: var(--super_light_brown);
   position: absolute;
-  bottom: 0;
   width: 100%;
 }
+
+.signinFooter {
+  bottom: 0;
+}
+
 #footer i {
   font-size: 2rem;
 }
@@ -236,6 +240,8 @@ section p {
   color: var(--super_light_brown);
   font-family: "Raleway", serif;
 }
+
+
 
 /* ---------------------- SIGNIN AND SIGNUP ----------------------*/
 .sign-body {

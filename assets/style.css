@@ -1,5 +1,52 @@
-html {
-   margin: -0.5rem;
+
+body {
+  margin: 0;
+}
+
+:root {
+    --dark_brown: #190918;  
+    --chocolate: #5c210a;
+    --brown: #875731;
+    --light_brown: #a87638;
+    --super_light_brown: #c59644;
+    --beige: #f7eabc;
+    --light_text: #fcfcf4;
+    --medium_text: #e9e4de;
+    --dark_text: #b7a89c;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 9rem 1.5rem 1rem;
+    background-color: var(--dark_brown);
+    mix-blend-mode: hard-light;
+    align-items: center;
+}
+nav a {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 2rem;
+    font-family: "Bodoni Moda", serif;
+}
+#logo {
+    height: 4rem;
+    width: 4rem;
+    background-image: url("img/gagne_pain_logo_transparent.png");
+    background-size: cover;
+}
+#menu_burger {
+    height: 3rem;
+    width: 3rem;
+    margin-top: 1rem;
+    background-color: var(--super_light_brown);
+    border-radius: 55%;
+}
+h1 {
+    font-family: "Bodoni Moda", "Oswald", serif;
+    padding: 2rem 0.5rem;
 }
 
 .pains {
@@ -57,3 +104,23 @@ html {
     font-family: 'Bodoni Moda', sans-serif;
     font-weight: 100;
 }   
+
+#footer {
+    background-color: var(--dark_brown);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 3rem;
+    color: var(--super_light_brown);
+    
+  }
+  
+  #footer i {
+    font-size: 2rem;
+  }
+  #footer a {
+    text-decoration: none;
+    color: var(--super_light_brown);
+    font-family: "Raleway", serif;
+  }
+  
