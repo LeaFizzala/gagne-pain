@@ -1,39 +1,172 @@
-html {
-   margin: -0.5rem;
+
+/********************************** MAIN CSS FILE FOR PHONES *********************************/
+/*********************************************************************************************/
+
+:root{
+    --brown : #875731;
+    --light_brown : #A87638;
+    --super_light_brown : #C59644;
+    --chocolate : #5C210A;
+    --dark_brown : #190918;
+
 }
+* {
+    box-sizing: border-box;
+    /*border: 1px solid red;*/
+    margin:0;
+    padding : 0;
+}
+
+header{
+    background-color: var(--dark_brown);
+}
+
+nav{
+    position: sticky;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    padding:1rem 3rem 1.5rem 1rem;
+    background-color: var(--dark_brown);
+    mix-blend-mode: hard-light;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 0.5rem;
+    color: #FFFF;
+    font-size: 2rem;
+    font-family: 'Bodoni Moda', serif;
+}
+.nav_title{
+  display: none;
+}
+.icon{
+  display:flex;
+  height:2rem;
+  width:2rem;
+  color:#D9D9D9
+}
+
+#logo{
+    height:4rem;
+    width:4rem;
+    background-image: url("img/gagne_pain_logo_transparent.png");
+    background-size: cover;
+}
+
+/* ------------------------- MENU BURGER -----------------*/
+#menu__toggle {
+    opacity: 0;
+  }
+  #menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+    
+  }
+  #menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+
+  }
+  #menu__toggle:checked + .menu__btn > span::after {
+    top: 0; 
+    transform: rotate(90deg);
+  
+  }
+  #menu__toggle:checked ~ .menu__box {
+    right: 0 !important;
+  }
+  .menu__btn {
+    position: fixed;
+    top: 3rem;
+    right: 1.5rem;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #D9D9D9;
+    transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  .menu__box {
+    display: block;
+    position: fixed;
+    top: 6.5rem;
+    right: -100%;
+    width: 10rem;
+    height: fit-content;
+    margin: 0;
+    padding: 5rem 0;
+    list-style: none;
+    background-color: #D9D9D9;
+    mix-blend-mode: hard-light;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+  }
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: var(--dark_brown);
+    font-family: 'Bodoni Modona', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+
+  /************************  MAIN SECTION  **************************/
 
 .pains {
     background-color: #35140f;
     height: 16rem;
-    margin-bottom: -1rem;
+    
 }
 
 .viennoiseries {
     background-color: #5c210a;
     height: 16rem;
-    margin-bottom: -1rem;
+    
 }
 
 .sandwichs {
     background-color: #875731;
     height: 16rem;
-    margin-bottom: -1rem;
+   
 }
 
 .boissons {
     background-color: #a87638;
     height: 16rem;
-    margin-bottom: -1rem;
+    
 }
 
 .tartes {
     background-color: #c59644;
     height: 16rem;
-    margin-bottom: -1rem;
+   
 }
 
 .tab {
-    height: 10.8rem;;
+    height: 10.8rem;
     width: 19.2rem;
 }
 
@@ -41,10 +174,9 @@ html {
    height: 3rem;
    display: flex;
    align-items: center;
-   padding-left: 2.1rem;;
 }
 
-.caseDown {
+.caseGlobal {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,4 +188,248 @@ html {
     color: white;
     font-family: 'Bodoni Moda', sans-serif;
     font-weight: 100;
+}
+
+.card {
+    background-color: #a87638;
+    display: grid;
+}
+
+.titleConsommation {
+    overflow-wrap: break-word;
+    font-family: 'Bodoni Moda', sans-serif;
+}
+
+.qtyTitle {
+    font-family: 'Bodoni Moda', sans-serif;
+    font-weight: 400;
+}
+
+.supCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5%;
+}
+
+.imgConsommation {
+    width: 50%;
+}
+
+.titleCard {
+    width: 50%;
+    margin-left: 5%;
+}
+
+.infCard {
+    display: flex;
+    flex-direction: column;
+    margin: 2.5%;
+}
+
+.quantityCard {
+    padding-bottom: 2.5%;
+    display: inline-flex;
+}
+
+.deleteCard {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.plusMinus {
+    display: flex;
+}
+
+.quantityInput {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    background-color: transparent;
+    border: 0px solid #efefef;
+}
+
+.minus, .plus {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+
+.plus {
+    background-color: #5C210A;
+    border: 1px solid black;
+    border-radius: 25%;
+}
+
+.minus {
+    background-color: #F7EABC;
+    border: 1px solid black;
+    border-radius: 15%;
+}
+
+.qty {
+    padding-left: 7.5%;
+}
+
+.mainPanier {
+    background-color: #c59644;
+    min-height: 100vh;
+}
+
+.sousTotal, .remise, .total {
+    
+    border: 1px solid black;;
+    justify-content: space-between;
+}
+
+.remise {
+    border-bottom: 0px;
+    border-top: 0px;
+}
+
+.infoPrice {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    background-color: #A87638;
+    font-family: 'Bodoni Moda', sans-serif;
+    font-weight: 300;
+}
+
+.paiement {
+    background-color: #c59644;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    padding: 5%;
+}
+
+.btnPaiement {
+    padding: 2.5%;
+    padding-left: 25%;
+    padding-right: 25%;
+    color: white;
+    background-color: black;
+    font-size: 100%;
+    
+}
+
+.btnTitle {
+    font-family: 'Bodoni Moda', sans-serif;
+    font-weight: 500;
+}
+
+
+/* ---------------------- FOOTER ----------------------*/
+
+#footer{
+    background-color: var(--dark_brown);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height:3rem;
+    color:var(--super_light_brown);
+}
+
+#footer i{
+    font-size: 2rem;
+}
+#footer a{
+    text-decoration: none;
+    color: var(--super_light_brown);
+    font-family: 'Raleway', serif;
+}
+/******************************************************************************************************/
+/******************************************* FOR DESKTOP *******************************************/
+/*******************************************************************************************************/
+@media only screen and (min-width: 700px) {
+  *{
+    
+    /* border : solid 1px red; */
+  
+    
+  }
+  body{
+    margin:0;
+    
+  }
+  .nav_title{
+    display: flex;
+    font-family:'Bodoni Moda', Courier, monospace;
+  }
+
+  .nav_title:hover{
+    color: #D9D9D9;
+  }
+
+  #icon1{
+    display: none;
+  }
+  #icon2{
+    display: none;
+  }
+  .mainSelection{
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: var(--chocolate);
+    height:38rem;
+  }
+  .main_banner{
+    background-image: url(/assets/img/desktop_banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25rem;
+  }
+  .caseGlobal{
+    background-color: var(--chocolate);
+    padding:2rem;
+  }
+  .caseGlobal>* {
+    flex: 0 0 65.3333%;
+}
+.boissons{
+  margin:0;
+  
+}
+.tartes{
+  margin:0;
+  
+}
+.sandwichs{
+  margin:0;
+  
+}
+.viennoiseries{
+  margin:0;
+ 
+}
+/* ---------------------- FOOTER ----------------------*/
+
+footer{
+  background-color: var(--dark_brown);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height:5rem;
+  color:var(--super_light_brown);
+}
+footer i{
+  font-size: 2rem;
+}
+footer a{
+  text-decoration: none;
+  color: var(--super_light_brown);
+  font-family: 'Raleway', serif;
+}
+footer i:hover{
+  color:#D9D9D9;
+}
 }
